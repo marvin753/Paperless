@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE8484382C96FE0200A198BD /* PaperlessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8484372C96FE0200A198BD /* PaperlessApp.swift */; };
+		CE84843A2C96FE0200A198BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8484392C96FE0200A198BD /* ContentView.swift */; };
+		CE84843C2C96FE0200A198BD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84843B2C96FE0200A198BD /* Item.swift */; };
+		CE84843E2C96FE0400A198BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE84843D2C96FE0400A198BD /* Assets.xcassets */; };
+		CE8484412C96FE0400A198BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8484402C96FE0400A198BD /* Preview Assets.xcassets */; };
+		CE84844B2C96FE0500A198BD /* PaperlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84844A2C96FE0500A198BD /* PaperlessTests.swift */; };
+		CE8484552C96FE0500A198BD /* PaperlessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8484542C96FE0500A198BD /* PaperlessUITests.swift */; };
+		CE8484572C96FE0500A198BD /* PaperlessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8484562C96FE0500A198BD /* PaperlessUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE8484472C96FE0500A198BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE84842C2C96FE0200A198BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8484332C96FE0200A198BD;
+			remoteInfo = Paperless;
+		};
+		CE8484512C96FE0500A198BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE84842C2C96FE0200A198BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8484332C96FE0200A198BD;
+			remoteInfo = Paperless;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE8484342C96FE0200A198BD /* Paperless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paperless.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8484372C96FE0200A198BD /* PaperlessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperlessApp.swift; sourceTree = "<group>"; };
+		CE8484392C96FE0200A198BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE84843B2C96FE0200A198BD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CE84843D2C96FE0400A198BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE8484402C96FE0400A198BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE8484462C96FE0500A198BD /* PaperlessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperlessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE84844A2C96FE0500A198BD /* PaperlessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperlessTests.swift; sourceTree = "<group>"; };
+		CE8484502C96FE0500A198BD /* PaperlessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperlessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8484542C96FE0500A198BD /* PaperlessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperlessUITests.swift; sourceTree = "<group>"; };
+		CE8484562C96FE0500A198BD /* PaperlessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperlessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE8484312C96FE0200A198BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8484432C96FE0500A198BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE84844D2C96FE0500A198BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE84842B2C96FE0200A198BD = {
+			isa = PBXGroup;
+			children = (
+				CE8484362C96FE0200A198BD /* Paperless */,
+				CE8484492C96FE0500A198BD /* PaperlessTests */,
+				CE8484532C96FE0500A198BD /* PaperlessUITests */,
+				CE8484352C96FE0200A198BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE8484352C96FE0200A198BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE8484342C96FE0200A198BD /* Paperless.app */,
+				CE8484462C96FE0500A198BD /* PaperlessTests.xctest */,
+				CE8484502C96FE0500A198BD /* PaperlessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE8484362C96FE0200A198BD /* Paperless */ = {
+			isa = PBXGroup;
+			children = (
+				CE8484372C96FE0200A198BD /* PaperlessApp.swift */,
+				CE8484392C96FE0200A198BD /* ContentView.swift */,
+				CE84843B2C96FE0200A198BD /* Item.swift */,
+				CE84843D2C96FE0400A198BD /* Assets.xcassets */,
+				CE84843F2C96FE0400A198BD /* Preview Content */,
+			);
+			path = Paperless;
+			sourceTree = "<group>";
+		};
+		CE84843F2C96FE0400A198BD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE8484402C96FE0400A198BD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE8484492C96FE0500A198BD /* PaperlessTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE84844A2C96FE0500A198BD /* PaperlessTests.swift */,
+			);
+			path = PaperlessTests;
+			sourceTree = "<group>";
+		};
+		CE8484532C96FE0500A198BD /* PaperlessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE8484542C96FE0500A198BD /* PaperlessUITests.swift */,
+				CE8484562C96FE0500A198BD /* PaperlessUITestsLaunchTests.swift */,
+			);
+			path = PaperlessUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE8484332C96FE0200A198BD /* Paperless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE84845A2C96FE0500A198BD /* Build configuration list for PBXNativeTarget "Paperless" */;
+			buildPhases = (
+				CE8484302C96FE0200A198BD /* Sources */,
+				CE8484312C96FE0200A198BD /* Frameworks */,
+				CE8484322C96FE0200A198BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Paperless;
+			productName = Paperless;
+			productReference = CE8484342C96FE0200A198BD /* Paperless.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE8484452C96FE0500A198BD /* PaperlessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE84845D2C96FE0500A198BD /* Build configuration list for PBXNativeTarget "PaperlessTests" */;
+			buildPhases = (
+				CE8484422C96FE0500A198BD /* Sources */,
+				CE8484432C96FE0500A198BD /* Frameworks */,
+				CE8484442C96FE0500A198BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE8484482C96FE0500A198BD /* PBXTargetDependency */,
+			);
+			name = PaperlessTests;
+			productName = PaperlessTests;
+			productReference = CE8484462C96FE0500A198BD /* PaperlessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE84844F2C96FE0500A198BD /* PaperlessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8484602C96FE0500A198BD /* Build configuration list for PBXNativeTarget "PaperlessUITests" */;
+			buildPhases = (
+				CE84844C2C96FE0500A198BD /* Sources */,
+				CE84844D2C96FE0500A198BD /* Frameworks */,
+				CE84844E2C96FE0500A198BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE8484522C96FE0500A198BD /* PBXTargetDependency */,
+			);
+			name = PaperlessUITests;
+			productName = PaperlessUITests;
+			productReference = CE8484502C96FE0500A198BD /* PaperlessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE84842C2C96FE0200A198BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CE8484332C96FE0200A198BD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					CE8484452C96FE0500A198BD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CE8484332C96FE0200A198BD;
+					};
+					CE84844F2C96FE0500A198BD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CE8484332C96FE0200A198BD;
+					};
+				};
+			};
+			buildConfigurationList = CE84842F2C96FE0200A198BD /* Build configuration list for PBXProject "Paperless" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE84842B2C96FE0200A198BD;
+			productRefGroup = CE8484352C96FE0200A198BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE8484332C96FE0200A198BD /* Paperless */,
+				CE8484452C96FE0500A198BD /* PaperlessTests */,
+				CE84844F2C96FE0500A198BD /* PaperlessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE8484322C96FE0200A198BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8484412C96FE0400A198BD /* Preview Assets.xcassets in Resources */,
+				CE84843E2C96FE0400A198BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8484442C96FE0500A198BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE84844E2C96FE0500A198BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE8484302C96FE0200A198BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE84843A2C96FE0200A198BD /* ContentView.swift in Sources */,
+				CE84843C2C96FE0200A198BD /* Item.swift in Sources */,
+				CE8484382C96FE0200A198BD /* PaperlessApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8484422C96FE0500A198BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE84844B2C96FE0500A198BD /* PaperlessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE84844C2C96FE0500A198BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8484572C96FE0500A198BD /* PaperlessUITestsLaunchTests.swift in Sources */,
+				CE8484552C96FE0500A198BD /* PaperlessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE8484482C96FE0500A198BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8484332C96FE0200A198BD /* Paperless */;
+			targetProxy = CE8484472C96FE0500A198BD /* PBXContainerItemProxy */;
+		};
+		CE8484522C96FE0500A198BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8484332C96FE0200A198BD /* Paperless */;
+			targetProxy = CE8484512C96FE0500A198BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE8484582C96FE0500A198BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE8484592C96FE0500A198BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE84845B2C96FE0500A198BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Paperless/Preview Content\"";
+				DEVELOPMENT_TEAM = 83SXTC8MR2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.Paperless;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE84845C2C96FE0500A198BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Paperless/Preview Content\"";
+				DEVELOPMENT_TEAM = 83SXTC8MR2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.Paperless;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE84845E2C96FE0500A198BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83SXTC8MR2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.PaperlessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paperless.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Paperless";
+			};
+			name = Debug;
+		};
+		CE84845F2C96FE0500A198BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83SXTC8MR2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.PaperlessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paperless.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Paperless";
+			};
+			name = Release;
+		};
+		CE8484612C96FE0500A198BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83SXTC8MR2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.PaperlessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Paperless;
+			};
+			name = Debug;
+		};
+		CE8484622C96FE0500A198BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83SXTC8MR2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.PaperlessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Paperless;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE84842F2C96FE0200A198BD /* Build configuration list for PBXProject "Paperless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8484582C96FE0500A198BD /* Debug */,
+				CE8484592C96FE0500A198BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE84845A2C96FE0500A198BD /* Build configuration list for PBXNativeTarget "Paperless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE84845B2C96FE0500A198BD /* Debug */,
+				CE84845C2C96FE0500A198BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE84845D2C96FE0500A198BD /* Build configuration list for PBXNativeTarget "PaperlessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE84845E2C96FE0500A198BD /* Debug */,
+				CE84845F2C96FE0500A198BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8484602C96FE0500A198BD /* Build configuration list for PBXNativeTarget "PaperlessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8484612C96FE0500A198BD /* Debug */,
+				CE8484622C96FE0500A198BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE84842C2C96FE0200A198BD /* Project object */;
+}
