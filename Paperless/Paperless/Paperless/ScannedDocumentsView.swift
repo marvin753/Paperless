@@ -14,14 +14,45 @@ struct ScannedDocumentsView: View {
     @Query(FetchDescriptor<Folder>()) var folders: [Folder]
     @State private var showCreateFolderAlert = false
     @State private var newFolderName = ""
+    @State private var showSettings = false  // Neue @State-Variable für das Anzeigen des Fullscreen-Modals
     
     var body: some View {
         NavigationStack {
             VStack(spacing: 10) {
                 Spacer(minLength: 0)
                 
-                ScrollView {
+                // Verschieben des gesamten Header-Bereichs (Titel und Symbole) weiter nach oben
+                HStack {
+                    Text("Dokumente")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
                     
+                    Spacer()
+                    
+                    HStack(spacing: 20) {
+                        Button(action: {
+                            showCreateFolderAlert = true
+                        }) {
+                            Image("add")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 29, height: 29)
+                        }
+
+                        Button(action: {
+                            showSettings = true  // Öffnet das Fullscreen Modal für die Settings
+                        }) {
+                            Image(systemName: "gearshape.circle")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 29, height: 29)
+                        }
+                    }
+                }
+                .padding(.horizontal)
+                .padding(.top, 7)  // Verschiebt den Header-Bereich weiter nach oben
+
+                ScrollView {
                     if folders.isEmpty {
                         HStack {
                             Text("Keine Ordner vorhanden")
@@ -34,9 +65,9 @@ struct ScannedDocumentsView: View {
                             ForEach(folders, id: \.self) { folder in
                                 NavigationLink(value: folder) {
                                     VStack {
-                                        Image(systemName: "folder")
+                                        Image("folder2")
                                             .resizable()
-                                            .frame(width: 78, height: 64)
+                                            .frame(width: 64, height: 64)
                                             .foregroundColor(.black)
                                         Text(folder.name)
                                             .font(.caption)
@@ -50,22 +81,6 @@ struct ScannedDocumentsView: View {
                     }
                 }
             }
-            
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Text("Dokumente")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                }
-                
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        showCreateFolderAlert = true
-                    }) {
-                        Image(systemName: "folder.badge.plus")
-                    }
-                }
-            }
             .alert("Neuen Ordner", isPresented: $showCreateFolderAlert) {
                 TextField("Ordnername", text: $newFolderName)
                 Button("Erstellen", action: createNewFolder)
@@ -75,6 +90,9 @@ struct ScannedDocumentsView: View {
             }
             .navigationDestination(for: Folder.self) { folder in
                 FolderContentView(folder: folder)
+            }
+            .fullScreenCover(isPresented: $showSettings) { // Bei .sheet wird Pop-up angezeigt & <- full screen
+                SettingsView(showSettings: $showSettings)  // Fullscreen SettingsView
             }
         }
     }

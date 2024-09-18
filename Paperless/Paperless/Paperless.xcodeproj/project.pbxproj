@@ -22,6 +22,9 @@
 		CE84846C2C971A7600A198BD /* DocumentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84846B2C971A7600A198BD /* DocumentDetailView.swift */; };
 		CE84846E2C98352200A198BD /* FolderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84846D2C98352200A198BD /* FolderContentView.swift */; };
 		CE8484702C9887AA00A198BD /* DocumentScannerViewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84846F2C9887AA00A198BD /* DocumentScannerViewSheet.swift */; };
+		CEEA67192C9AE13E0004770D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA67182C9AE13E0004770D /* SettingsView.swift */; };
+		CEEA671B2C9B08AA0004770D /* AboutTheAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA671A2C9B08AA0004770D /* AboutTheAppView.swift */; };
+		CEEA67212C9B0E3D0004770D /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA67202C9B0E3D0004770D /* SettingsRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		CE84846B2C971A7600A198BD /* DocumentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDetailView.swift; sourceTree = "<group>"; };
 		CE84846D2C98352200A198BD /* FolderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderContentView.swift; sourceTree = "<group>"; };
 		CE84846F2C9887AA00A198BD /* DocumentScannerViewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScannerViewSheet.swift; sourceTree = "<group>"; };
+		CEEA67182C9AE13E0004770D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CEEA671A2C9B08AA0004770D /* AboutTheAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTheAppView.swift; sourceTree = "<group>"; };
+		CEEA67202C9B0E3D0004770D /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +122,11 @@
 				CE84846D2C98352200A198BD /* FolderContentView.swift */,
 				CE8484632C97039500A198BD /* DocumentScannerView.swift */,
 				CE84846F2C9887AA00A198BD /* DocumentScannerViewSheet.swift */,
+				CEEA67222C9B3D090004770D /* New Group */,
 				CE8484672C970D2B00A198BD /* ScannedDocumentsView.swift */,
+				CEEA67182C9AE13E0004770D /* SettingsView.swift */,
+				CEEA67202C9B0E3D0004770D /* SettingsRowView.swift */,
+				CEEA671A2C9B08AA0004770D /* AboutTheAppView.swift */,
 				CE84846B2C971A7600A198BD /* DocumentDetailView.swift */,
 				CE8484652C970C1900A198BD /* ScannedDocument.swift */,
 				CE8484692C9717B300A198BD /* Folder.swift */,
@@ -149,6 +159,13 @@
 				CE8484562C96FE0500A198BD /* PaperlessUITestsLaunchTests.swift */,
 			);
 			path = PaperlessUITests;
+			sourceTree = "<group>";
+		};
+		CEEA67222C9B3D090004770D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEA671B2C9B08AA0004770D /* AboutTheAppView.swift in Sources */,
 				CE8484642C97039500A198BD /* DocumentScannerView.swift in Sources */,
 				CE84843A2C96FE0200A198BD /* ContentView.swift in Sources */,
 				CE8484662C970C1900A198BD /* ScannedDocument.swift in Sources */,
@@ -290,6 +308,8 @@
 				CE84846C2C971A7600A198BD /* DocumentDetailView.swift in Sources */,
 				CE8484702C9887AA00A198BD /* DocumentScannerViewSheet.swift in Sources */,
 				CE8484382C96FE0200A198BD /* PaperlessApp.swift in Sources */,
+				CEEA67212C9B0E3D0004770D /* SettingsRowView.swift in Sources */,
+				CEEA67192C9AE13E0004770D /* SettingsView.swift in Sources */,
 				CE84846A2C9717B300A198BD /* Folder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
